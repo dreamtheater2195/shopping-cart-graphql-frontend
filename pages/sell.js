@@ -1,8 +1,13 @@
 import React, { Component } from "react";
 import CreateItems from "../components/CreateItem";
+import PleaseSignIn from "../components/PleaseSignIn";
 class Sell extends Component {
   render() {
-    return <CreateItems />;
+    return (
+      <PleaseSignIn>
+        <CreateItems />
+      </PleaseSignIn>
+    );
   }
 }
 
